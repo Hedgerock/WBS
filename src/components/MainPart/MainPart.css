@@ -1,0 +1,49 @@
+.main-part-box {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 3rem;
+
+    padding-top: 3rem;
+}
+
+.about-us__title {
+    text-align: center;
+    color: var(--mpClr);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.contact-us_main-part {
+    width: 180px;
+}
+
+.additional-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+
+@media (max-width: 950px) {
+    .about-us {
+        width: 100%;
+    }
+
+    .additional-info {
+        flex-direction: column;
+    }
+}

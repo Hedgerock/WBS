@@ -1,0 +1,107 @@
+.contact-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid var(--bClr);
+    border-radius: 1rem;
+    min-width: 100px;
+
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    transition: 
+        box-shadow 0.4s ease, 
+        background-color 0.4s ease, 
+        color 0.4s ease;
+
+    overflow: hidden;
+}
+  
+.contact-us:hover{
+    background-color: #ea3c;
+    box-shadow: 
+    0 0 2px 0 rgba(238, 170, 51, 0.1), 
+    0 0 4px 0 rgba(238, 170, 51, 0.2), 
+    0 0 6px 0 rgba(238, 170, 51, 0.3), 
+    0 0 8px 0 rgba(238, 170, 51, 0.4),
+    0 0 12px 0 rgba(238, 170, 51, 0.5), 
+    0 0 18px 0 rgba(238, 170, 51, 0.6),
+    0 0 4px 0 rgba(238, 170, 51, 0.7);
+}
+  
+.contact-us__text {
+    color: #fff;
+    letter-spacing: .2rem;
+}
+
+.contact-us_main-part {
+    background: white;
+}
+
+.contact-us_main-part span {
+    color: #003558;
+}
+
+.contact-us_main-part:hover span {
+    color: white;
+}
+
+.contact-us__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    background-color: inherit;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 
+        transform 0.4s linear, 
+        top 1s linear;
+    overflow: hidden;
+}
+
+.contact-us__icon:before,
+.contact-us__icon:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.contact-us:hover .contact-us__icon:before {
+    border-radius: 46%;
+    background-color: rgba(20, 20, 20, 0.2);
+    animation: animate 5s linear infinite;
+}
+
+.contact-us:hover .contact-us__icon:after {
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+}
+  
+@keyframes animate {
+    0% 
+    {
+        transform: 
+        translate(-50%, -75%) 
+        rotate(0deg);
+    }
+    100% 
+    {
+        transform: 
+        translate(-50%, -75%) 
+        rotate(360deg);
+    }
+}

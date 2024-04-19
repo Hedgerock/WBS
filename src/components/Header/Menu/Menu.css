@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    gap: 2rem;
+
+    align-items: center;
+}
+
+.menu-element__link {
+    color: var(--clr);
+    font-size: 1.1rem;
+    
+    transition: color .3s ease-in-out;
+}
+
+.menu-element__link:hover {
+    color: var(--clrHov)
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+}

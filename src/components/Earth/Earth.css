@@ -1,0 +1,9 @@
+.earth {
+    cursor: grab;
+    width: 800px;
+    height: 700px;
+}
+
+.earth:active {
+    cursor: grabbing;
+}

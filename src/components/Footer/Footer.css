@@ -1,0 +1,21 @@
+.footer {
+    background: #003558;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1536px;
+    margin: 0 auto;
+
+    min-height: 5rem;
+
+    padding: 0 1rem;
+}
+
+.footer-box__rights {
+    color: var(--clr);
+    text-align: center;
+}

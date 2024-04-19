@@ -1,0 +1,93 @@
+.additional-info-container {
+    width: 30%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info_experties {
+    margin: 5rem 0;
+    gap: 7rem;
+}
+
+.additional-info-box:not(:last-child) {
+    border-bottom: 2px solid var(--bClr);
+    padding-bottom: 3rem;
+}
+
+@property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+}
+
+.additional-info-box__current-val,
+.additional-info-box__curent-title,
+.additional-info-box-paragraph,
+.additional-info-box-paragraph__title {
+    color: var(--mpClr);
+}
+
+.animate .additional-info-box__current-val {
+    transition: --num 1.2s;
+    counter-reset: num var(--num);
+    font-size: 5rem;
+}
+.animate .additional-info-box__current-val_employees{
+    --num: 430;
+}
+
+.animate .additional-info-box__current-val_locations {
+    --num: 23
+}
+
+.animate .additional-info-box__current-val::after {
+    content: counter(num);
+}
+
+.additional-info-box__curent-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.additional-info-box-paragraph {
+    font-size: 1.2rem;
+}
+
+.additional-info-box-paragraph__title {
+    font-weight: bold;
+}
+
+
+@media (max-width: 1250px) {
+    .additional-info .earth {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 950px) {
+    .additional-info-container {
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .additional-info .earth {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .additional-info .earth {
+        width: 320px;
+        height: 220px;
+    }
+}  

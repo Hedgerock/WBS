@@ -1,0 +1,25 @@
+.logo {
+    width: 120px;
+    height: 4rem;
+
+    border-radius: 50%;
+
+    padding: 1.5rem;
+
+    border-right: 8px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 2rem;
+
+    transition: all .3s ease-in-out;
+}
+
+
+.logo:hover {
+    border-right: 8px solid var(--bClr);
+    color: var(--clrHov);
+}

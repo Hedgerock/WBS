@@ -1,0 +1,149 @@
+.business-lines {
+    padding: 1rem 0;
+}
+
+.ship-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ship {
+    width: 33.3%;
+
+    transition: all 1s;
+
+    position: relative;
+}
+
+.ship__title {
+    color: var(--clr);
+    font-size: 2.5rem;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.ship-link {
+    position: absolute;
+    opacity: 0;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    transition: opacity .5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 2rem;
+}
+
+.ship-link__title {
+    font-size: 4rem;
+    color: var(--bClr);
+}
+
+.ship-link__text {
+    color: var(--clr);
+    font-size: 2.5rem;
+}
+
+.contact-us_ships {
+    width: 200px;
+
+    align-self: center;
+}
+
+.ship:hover .ship-link {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.ship:hover .ship__title {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ship-box:hover .ship {
+    opacity: .6;
+}
+
+.ship-box .ship:hover {
+    width: 80%;
+    opacity: 1;
+}
+
+.ship__src {
+    width: 100%;
+    height: 100%;
+    height: 95vh;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
+    filter: brightness(60%);
+
+    /* filter: brightness(70%); */
+}
+
+/* .ship-box .ship__src:hover {
+    filter: brightness(100%);
+} */
+
+@media (max-width: 950px) {
+    .ship__title {
+        font-size: 2rem;
+    }
+
+    .ship-link__title {
+        font-size: 2rem;
+    }
+    
+    .ship-link__text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .ship-box {
+        flex-direction: column;
+    }
+
+    .ship {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .ship-link {
+        opacity: 1;
+    }
+
+    .ship-box .ship:hover {
+        width: initial;
+        opacity: 1;
+    }
+
+    .ship-box:hover .ship {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .ship__title {
+        display: none;
+    }
+
+    .ship__src {
+        height: 50vh;
+    }
+}
