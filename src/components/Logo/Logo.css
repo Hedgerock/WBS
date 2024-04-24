@@ -16,6 +16,25 @@
     font-size: 2rem;
 
     transition: all .3s ease-in-out;
+
+    position: relative;
+}
+
+.logo span {
+    content: 'Worldwide brokership';
+    color: var(--bClr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: .5rem;
+    font-size: 1rem;
+    width: 180px;
+
+    position: absolute;
+    top: 100%;
+    left: 60%;
+
+    transform: translateX(-50%);
 }
 
 

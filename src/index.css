@@ -6,16 +6,15 @@
 
   --mpClr: #003558;
   --mpSClr: #424241;
+
+  --invClr: #e85f5f; /*contact us form invalid color*/
+  --fldClr: #42d4db; /*contact us form filled\ color*/
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {

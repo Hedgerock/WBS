@@ -1,0 +1,62 @@
+.types {
+    position: sticky;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 1rem;
+    background: var(--clr);
+
+    top: 111.5px;
+    left: 0;
+}
+
+.types-element {
+    font-size: 1.2rem;
+}
+
+.types-element__link {
+    color: var(--mpClr);
+    transition: color .3s;
+}
+
+.types-element__link:hover {
+    color: var(--bClr);
+}
+
+.business-lines-page .ship__src {
+    height: 100vh;
+}
+
+.business-lines-page .ship-box:hover .ship {
+    opacity: 1;
+}
+
+.business-lines-page .ship-box {
+    flex-direction: column;
+}
+
+.business-lines-page .ship-box .ship {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .business-lines-page .ship__src {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .types {
+        top: 97.5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .types-element {
+        font-size: 1rem;
+    }
+}

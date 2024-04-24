@@ -1,0 +1,135 @@
+.contact-us-form-label-container {
+    position: relative;
+}
+
+.contact-us-form-label {
+    position: relative;
+    border: 1px solid var(--clr);
+    border-radius: .8rem;
+
+    transition: border .3s;
+}
+
+.contact-us-form-label_file {
+    border: 2px dashed var(--clr);
+    height: 4rem;
+    cursor: pointer;
+}
+
+.contact-us-form-label__text {
+    color: var(--clr);
+
+    position: absolute;
+    top: 50%;
+    left: 8px;
+
+    text-align: start;
+
+    background: var(--mpClr);
+
+    transform: translateY(-50%);
+    transition: all .3s;
+}
+
+.counter {
+    color: var(--clr);
+
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.contact-us-form-label-del-btn {
+    text-align: end;
+
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    height: 100%;
+    width: 50px;
+    transform: translateY(-50%);
+
+    color: var(--clr);
+    font-size: 1.3rem;
+
+    transition: color .3s;
+}
+
+.contact-us-form-label-del-btn:hover {
+    color: #42d4db;
+}
+
+.contact-us-form-label_message .contact-us-form-label__text {
+    top: 12px;
+}
+
+.contact-us-form-label_text .contact-us-form-label__text {
+    position: static;
+}
+
+.contact-us-form-label:focus-within .contact-us-form-label__text {
+    top: 0;
+}
+
+.full .contact-us-form-label__text {
+    top: 0;
+}
+
+.contact-us-form-label__input {
+    background: transparent;
+    color: var(--clr);
+    border: none;
+    outline: none;
+
+    padding: 1rem;
+
+    font-size: 1.2rem;
+    border-radius: .8rem;
+}
+
+.contact-us-form-label__input_message {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-us-form-label__input_file {
+    display: none;
+}
+
+.invalid-field {
+    border: 1px solid var(--invClr);
+    position: relative;
+    height: 100%;
+}
+
+.invalid-field span {
+    color: var(--invClr);
+}
+
+.invalid-field::before {
+    content: attr(data-value)' required';
+
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    font-size: 1.2rem;
+    color: var(--invClr);
+}
+
+.filled {
+    border: 2px dashed var(--fldClr);
+}
+
+.filled span {
+    color: var(--fldClr);
+}
+
+@media (max-width: 360px) {
+    .invalid-field::before {
+        font-size: .8rem;
+    }
+}

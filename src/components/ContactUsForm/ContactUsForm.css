@@ -1,0 +1,31 @@
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.contact-us-form-submit-btn {
+    width: 250px;
+    padding: 1rem;
+
+    transition: all .3s;
+}
+
+.contact-us-form-submit-btn:disabled {
+    opacity: .4;
+    pointer-events: none;
+    border: 1px solid var(--clr);
+}
+
+@media (max-width: 950px) {
+    .contact-us-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-us-form-submit-btn {
+        width: 100%;
+    }
+}

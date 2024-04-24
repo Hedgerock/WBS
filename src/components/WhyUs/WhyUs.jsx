@@ -1,4 +1,5 @@
 import { ContactUs } from "../ContactUs"
+import { Contacts } from "../Contacts";
 import './WhyUs.css'
 import whyUsImg from './whyUsImg.jpg';
 
@@ -23,6 +24,7 @@ export const WhyUs = () => {
                     </p>
                     <ContactUs className = { 'contact-us_why-us' }/>
                 </div>
+                <Contacts />
             </div>
             <div className="picture">
                 <img src={ whyUsImg } alt="" className="picture__src" />

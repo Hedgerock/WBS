@@ -1,0 +1,59 @@
+.main-part_not-exists .main-part-box {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.main-part_not-exists {
+    background-color: var(--mpClr);
+
+    position: relative;
+}
+
+.not-exists-title {
+    font-size: 4rem;
+    color: var(--bClr);
+    text-align: center;
+}
+
+.not-exists-text {
+    font-size: 2rem;
+    color: var(--clr);
+    text-align: center;
+}
+
+.helm {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    opacity: .03;
+
+    width: 60%;
+    height: 60%;
+}
+
+.helm__src {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    animation: rotation 50s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+}

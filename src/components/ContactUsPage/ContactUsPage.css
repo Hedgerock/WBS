@@ -1,0 +1,48 @@
+.main-part_contact-us {
+    width: 100%;
+
+    padding: 10rem 1rem 1rem 1rem;
+    background: var(--mpClr);
+
+    min-height: 91.3vh;
+}
+
+.main-container__title_contact-us {
+    font-size: 3rem;
+    color: var(--bClr);
+    margin-bottom: 1rem;
+}
+
+.picture-bg {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    opacity: .05;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.picture-bg__src {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.contact-box {
+    display: flex;
+
+    gap: 3rem;
+}
+
+@media (max-width: 950px) {
+    .contact-box {
+        flex-direction: column-reverse;
+    }
+}

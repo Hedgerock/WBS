@@ -16,7 +16,7 @@ export const Ship = () => {
                             <p className="ship-link__text">
                                 { ship.description }
                             </p>
-                            <ContactUs text = { 'See more' } className = { 'contact-us_ships' } />
+                            <ContactUs text = { 'See more' } className = { 'contact-us_ships' } link = { ship.link }/>
                         </div>
                     </div>
                 ))

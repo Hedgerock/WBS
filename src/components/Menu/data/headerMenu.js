@@ -2,11 +2,11 @@ export const headerMenu = [
     {
         id: 1,
         title: 'About Us',
-        link: '#'
+        link: '/about-us'
     },
     {
         id: 2,
         title: 'Business Lines',
-        link: '#'
+        link: '/business-lines'
     }
 ]

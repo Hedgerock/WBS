@@ -3,6 +3,7 @@ import textureImg from '../components/Earth/textureImg.jpg';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export const init3dEarth = (containerRef) => {
+
     let isMouseDown = false;
     const scene = new THREE.Scene();
     const w = containerRef.current.clientWidth;
@@ -37,6 +38,9 @@ export const init3dEarth = (containerRef) => {
     }
 
     const onWindowResize = () => {
+        if (!containerRef.current) {
+            return
+        }
         camera.aspect = containerRef.current.clientWidth / containerRef.current.clientHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);

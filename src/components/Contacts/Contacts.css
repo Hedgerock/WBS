@@ -1,0 +1,61 @@
+.contacts {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: flex-start;
+    padding: 1rem;
+
+    border: 1px solid var(--clr);
+    border-radius: .6rem;
+    position: sticky;
+    top: 100px;
+    left: 0;
+    z-index: 100;
+}
+
+.contacts__title {
+    font-size: 2rem;
+    text-align: center;
+
+    width: 100%;
+    color: var(--bClr);
+}
+
+.contacts__value {
+    color: var(--clr);
+    font-size: 1.5rem;
+}
+
+.contacts__value_phone-number::before {
+    content: '\f095';
+}
+
+.contacts__value_email::before {
+    content: '\f0e0';
+}
+
+.contacts__value::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--bClr);
+
+    margin-right: 1rem;
+}
+
+@media (max-width: 950px) {
+    .contacts {
+        width: 100%;
+        position: static;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 360px) {
+    .contacts h3 {
+        font-size: 1.5rem;
+    }
+    .contacts span {
+        font-size: 1rem;
+    }
+}

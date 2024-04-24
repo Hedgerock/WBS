@@ -4,18 +4,39 @@
 
 .footer-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
     max-width: 1536px;
     margin: 0 auto;
 
     min-height: 5rem;
 
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .footer-box__rights {
     color: var(--clr);
     text-align: center;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3rem 0;
+}
+
+.terms-and-conditions {
+    text-align: center;
+
+    color: var(--clr);
+    font-size: 1.1rem;
+
+    transition: color .3s;
+}
+
+.terms-and-conditions:hover {
+    color: var(--bClr);
 }

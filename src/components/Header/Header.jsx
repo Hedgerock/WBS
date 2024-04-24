@@ -1,9 +1,8 @@
-import { ContactUs } from '../ContactUs'
-import { Logo } from '../Logo'
 import './Header.css'
-import { Menu } from './Menu'
 import video from './assets/bg.mp4'
 import { useAnimateComponent } from '../../hooks/useAnimateComponent'
+import { HeaderBox } from '../HeaderBox'
+import poster from './assets/poster.jpg'
 
 export const Header = () => {
     const elementRef = useAnimateComponent('header-box-bg');
@@ -16,15 +15,10 @@ export const Header = () => {
                 autoPlay 
                 loop 
                 muted
+                poster={ poster }
             >    
             </video>
-            <div className="header-box">
-                <div className="header-box-container">
-                    <Logo />
-                    <Menu />
-                    <ContactUs />
-                </div>
-            </div>
+            <HeaderBox />
         </div>
     )
 }

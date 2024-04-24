@@ -1,0 +1,54 @@
+.what-we-do {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+
+    padding: 2rem 0;
+
+    background: var(--mpClr);
+}
+
+.processes {
+    transition: all .3s;
+    width: 40%;
+
+    padding-right: 1rem;
+}
+
+.information-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.information-box .contacts {
+    width: 50%;
+}
+
+@media (max-width: 950px) {
+    .what-we-do {
+        flex-direction: column;
+    }
+
+    .processes {
+        width: 100%;
+    }
+
+    .processes {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .ship-page__title {
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .ship-page__title {
+        padding: 1.5rem 0;
+        font-size: 1.7rem;
+    }
+}

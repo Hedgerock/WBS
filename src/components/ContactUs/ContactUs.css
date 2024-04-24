@@ -44,11 +44,11 @@
     background: white;
 }
 
-.contact-us_main-part span {
+.contact-us_main-part .contact-us__text {
     color: #003558;
 }
 
-.contact-us_main-part:hover span {
+.contact-us_main-part:hover .contact-us__text {
     color: white;
 }
 

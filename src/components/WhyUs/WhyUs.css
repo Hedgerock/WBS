@@ -10,6 +10,9 @@
 .why-us-container {
     max-width: 1536px;
     margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .why-us-box {
@@ -61,8 +64,31 @@
     }
 }
 
+@media (max-width: 800px) {
+    .why-us-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+
 @media (max-width: 500px) {
     .contact-us_why-us {
         width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .why-us {
+        height: initial;
+    }
+
+    .why-us-box__title {
+        text-align: center;
+    }
+
+    .why-us-box {
+        padding: 0;
     }
 }

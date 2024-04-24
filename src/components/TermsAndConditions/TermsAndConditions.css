@@ -1,0 +1,37 @@
+.main-part_terms-and-conditions {
+    padding: 10rem 1rem 1rem 2rem;
+
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.terms-and-conditions-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.terms-and-conditions-box__title {
+    font-size: 1.8rem;
+    color: var(--mpClr);
+}
+
+.terms-and-conditions-box__sub-title {
+    color: var(--mpClr);
+    font-weight: normal;
+}
+
+.terms-and-conditions-box__paragraph {
+    font-size: 1.3rem;
+}
+
+.terms-and-conditions-box__bold-text {
+    margin-right: .3rem;
+    color: var(--mpClr);
+}
+
+.terms-and-conditions-box__text {
+    color: var(--mpClr);
+    opacity: .8;
+}

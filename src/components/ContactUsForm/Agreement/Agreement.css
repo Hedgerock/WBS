@@ -1,0 +1,55 @@
+.agreement {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.agreement-label {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row-reverse;
+
+    cursor: pointer;
+
+    gap: 1rem;
+    align-items: center;
+}
+
+.agreement-label__text {
+    color: var(--clr);
+}
+
+.agreement-label__input {
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid var(--bClr);
+    background: transparent;
+}
+
+.agreement__info {
+    color: var(--clr);
+    opacity: .6;
+}
+
+.agreeement-box {
+    display: flex;
+}
+
+.agreement__info_link {
+    text-decoration: underline;
+    margin-left: .3rem;
+    opacity: 1;
+    transition: color .3s;
+}
+
+.agreement__info_link:hover {
+    color: var(--bClr);
+}
+
+
+@media (max-width: 600px) {
+    .agreement__info, .agreement-label__text {
+        text-align: center;
+    }
+}
