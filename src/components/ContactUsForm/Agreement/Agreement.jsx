@@ -24,7 +24,7 @@ export const Agreement = (props) => {
                 contact forms is recorded in a digitised file by the building 
                 or the service in question in order to respond to your requests. 
                 Learn more about
-                <Link className='agreement__info agreement__info_link' to = '/terms-and-conditions'>your data management and rights.</Link>
+                <Link className='agreement__info agreement__info_link' to = '/WBS/terms-and-conditions'>your data management and rights.</Link>
             </p>
         </div>
     )

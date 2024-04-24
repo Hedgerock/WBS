@@ -24,7 +24,7 @@ export const MainPart = ({ children, className }) => {
                     <h2 className='about-us__title'>
                         We facilitate, coordinate, negotiate and help our customers find the best solution.
                     </h2>
-                    <ContactUs className = { 'contact-us_main-part' } text = { 'Learn more' } link = { '/about-us' }/>
+                    <ContactUs className = { 'contact-us_main-part' } text = { 'Learn more' } link = { '/WBS/about-us' }/>
                 </div>
                 <div className="additional-info">
                     <Earth />

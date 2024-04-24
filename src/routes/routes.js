@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/contact-us',
+      path: '/WBS/contact-us',
       element: (
         <>
           <Helmet>
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/terms-and-conditions',
+      path: '/WBS/terms-and-conditions',
       element: (
         <>
           <Helmet>
@@ -64,7 +64,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/business-lines',
+      path: '/WBS/business-lines',
       element: (
         <>
           <Helmet>
@@ -77,7 +77,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/business-lines/dry-bulk',
+      path: '/WBS/business-lines/dry-bulk',
       element: (
         <>
           <Helmet>
@@ -90,7 +90,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/business-lines/tanker',
+      path: '/WBS/business-lines/tanker',
       element: (
         <>
           <Helmet>
@@ -103,7 +103,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/business-lines/container-ship',
+      path: '/WBS/business-lines/container-ship',
       element: (
         <>
           <Helmet>
@@ -116,7 +116,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/business-lines/lng',
+      path: '/WBS/business-lines/lng',
       element: (
         <>
           <Helmet>
@@ -129,7 +129,7 @@ export const router = createBrowserRouter([
       errorElement: <NotExistsPage />
     },
     {
-      path: '/about-us',
+      path: '/WBS/about-us',
       element: (
         <>
           <Helmet>

@@ -5,7 +5,7 @@ export const ContactUs = (props) => {
     const { className, text, link } = props
 
     return (
-        <Link to = { link || '/contact-us' } className = { `contact-us ${className ? className : ''}` }>
+        <Link to = { link || '/WBS/contact-us' } className = { `contact-us ${className ? className : ''}` }>
             <span className='contact-us__text'>{ text || 'Contact us' }</span>
             <i className='contact-us__icon'></i>
         </Link>
