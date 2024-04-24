@@ -16,7 +16,7 @@ export const NotExistsPage = () => {
                 <div className="helm">
                     <img src={ helm } alt="" className="helm__src" />
                 </div>
-                <ContactUs link={ '/' } text = { 'Back to homepage' }/>
+                <ContactUs link={ '/WBS' } text = { 'Back to homepage' }/>
             </MainPart>
             <Footer />
         </>

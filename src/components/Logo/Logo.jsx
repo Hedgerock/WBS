@@ -4,6 +4,6 @@ import './Logo.css'
 export const Logo = () => {
 
     return (
-        <Link to ='/' className="logo">WBS <span>Worldwide shipbrocker</span></Link>
+        <Link to ='/WBS' className="logo">WBS <span>Worldwide shipbrocker</span></Link>
     )
 }
