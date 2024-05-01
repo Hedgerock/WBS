@@ -14,7 +14,9 @@ export const FormLabel = (props) => {
     }, [formIsValid]);
 
     const testVal = 'Phone number'
-    const maxLength = 4000;
+
+    const maxLengthInput = 100;
+    const maxLengthTextArea = 4000;
 
     return (
         <label 
@@ -37,7 +39,7 @@ export const FormLabel = (props) => {
             </span>
             { type === 'textarea' &&
                 <span className="counter">
-                    { newValue.length } / { maxLength }
+                    { newValue.length } / { maxLengthTextArea }
                 </span>
             }
             { 
@@ -49,7 +51,7 @@ export const FormLabel = (props) => {
                     }}
                     className={ `contact-us-form-label__input contact-us-form-label__input_${className}` }
                     value={ newValue }
-                    maxLength={ maxLength }
+                    maxLength={ maxLengthTextArea }
                 >   
                 </textarea>
                 : <input
@@ -65,6 +67,7 @@ export const FormLabel = (props) => {
                     value={ newValue }
                     type={ type }
                     required = { className === 'email' }
+                    maxLength={ maxLengthInput }
                 />
             }
         </label>

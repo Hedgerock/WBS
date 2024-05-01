@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 export const MenuEl = (props) => {
     const { data = [] } = props
 
-    const url = window.location.href.split('/');
-    const checkUrl = '/' + url[url.length - 1];
+    const url = window.location.href.split('/').filter(item => item);
+    const checkUrl = '/' + url.slice(2).join('/');
 
     return (
         data.map(el => (

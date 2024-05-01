@@ -9,9 +9,9 @@
     border: 1px solid var(--clr);
     border-radius: .6rem;
     position: sticky;
-    top: 100px;
+    top: 120px;
     left: 0;
-    z-index: 100;
+    z-index: 40;
 }
 
 .contacts__title {

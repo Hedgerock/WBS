@@ -51,7 +51,6 @@ input {
   width: 100%;
 }
 
-
 @media (max-width: 600px) {
   html {
     font-size: 14px;

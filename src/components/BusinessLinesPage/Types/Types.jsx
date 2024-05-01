@@ -4,8 +4,8 @@ import './Types.css';
 
 export const Types = () => {
 
-    const url = window.location.href.split('/');
-    const checkUrl = '/' + url[url.length - 2] + '/' + url[url.length - 1];
+    const url = window.location.href.split('/').filter(item => item);
+    const checkUrl = '/' + url.slice(2).join('/');
 
     return (
         <ul className="types">

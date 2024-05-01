@@ -1,5 +1,22 @@
 .contact-us-form-label-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-us-form-label-container::before {
+    content: attr(data-length)'/10';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+
+    color: white;
+}
+
+.contact-us-form-label-box {
+    position: relative;
 }
 
 .contact-us-form-label {
@@ -14,6 +31,7 @@
     border: 2px dashed var(--clr);
     height: 4rem;
     cursor: pointer;
+    position: relative;
 }
 
 .contact-us-form-label__text {
@@ -40,11 +58,9 @@
 }
 
 .contact-us-form-label-del-btn {
-    text-align: end;
-
     position: absolute;
     top: 40%;
-    right: 10px;
+    right: 0;
     height: 100%;
     width: 50px;
     transform: translateY(-50%);

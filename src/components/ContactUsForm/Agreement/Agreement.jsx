@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
 import './Agreement.css'
+import { useEffect, useState } from 'react'
 
 export const Agreement = (props) => {
-    const { setUserAgree } = props
+    const { setUserAgree, formIsValid } = props
+    const [ checkboxState, setCheckboxState ] = useState(false);
+
+    useEffect(() => {
+        setCheckboxState(false);
+    }, [formIsValid])
 
     return (
         <div className="agreement">
@@ -10,12 +16,12 @@ export const Agreement = (props) => {
                 <span className='agreement-label__text'>
                 By ticking this box, I confirm that I have read the information below.
                 </span>
-                <input type='checkbox' 
-                onChange={ e => (
-                    e.target.checked
-                        ? setUserAgree(true)
-                        : setUserAgree(false)
-                )}
+                <input type='checkbox'
+                checked = { checkboxState } 
+                onChange={ e => {
+                    e.target.checked ? setUserAgree(true) : setUserAgree(false)
+                    setCheckboxState(prev => !prev)
+                }}
                 className='agreement-label__input'
                 />
             </label>
