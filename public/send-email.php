@@ -13,10 +13,6 @@
     //Load Composer's autoloader
     require 'vendor/autoload.php';
 
-	var_dump($_POST);
-	var_dump($_FILES);
-	file_put_contents('files.txt', var_export($_FILES, true));
-
     //Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
@@ -65,7 +61,7 @@
 		$mail->CharSet    = 'UTF-8';
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'dmitriyvas21@gmail.com';                     //SMTP username
-        $mail->Password   = 'sbjn reez ucvh alzn';                               //SMTP password
+        $mail->Password   = '************';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     

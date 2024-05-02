@@ -1,8 +1,8 @@
 {
-    "name": "professional/info.liftron.com.ua.local",
+    "name": "WBS/Contact-us-form",
     "authors": [
         {
-            "name": "Dmitry Stetsenko"
+            "name": "Hedgerock"
         }
     ],
     "require": {
